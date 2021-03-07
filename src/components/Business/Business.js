@@ -1,7 +1,7 @@
 import React from "react";
-import "./Business";
+import "./Business.css";
 
-const business = {
+let business = {
 	imageSrc: "https://content.codecademy.com/programs/react/ravenous/pizza.jpg",
 	name: "MarginOtto Pizzeria",
 	address: "1010 Paddington Way",
@@ -25,7 +25,7 @@ class Business extends React.Component {
 					<div className="Business-address">
 						<p>{business.address}</p>
 						<p>{business.city}</p>
-						<p>{{business.state} + {business.zipCode}}</p>
+						<p>{business.state + business.zipCode}</p>
 					</div>
 					<div className="Business-reviews">
 						<h3>{business.category}</h3>
